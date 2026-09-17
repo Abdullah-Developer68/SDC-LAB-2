@@ -1,0 +1,17 @@
+{
+  "name": "sdc-lab-2-order-management-legacy",
+  "version": "1.0.0",
+  "description": "SDC Lab 2: Original In-Memory Order & Inventory Management System (Pre-audit Baseline)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "sdc",
+    "software-construction",
+    "legacy-codebase",
+    "node"
+  ],
+  "author": "Abdullah",
+  "license": "ISC"
+}

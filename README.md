@@ -12,21 +12,21 @@ Both the original codebase and the improved refactored codebase are provided sid
 
 ```text
 SDC-LAB-2/
-├── old_code/                 # Original unrefactored implementation
+├── old_code/                 # Original unrefactored project (Baseline)
+│   ├── package.json          # Legacy project configuration
 │   ├── models.js             # Domain entities with public mutable fields
 │   ├── inventoryRepository.js # Repository layer with adjustStock() logic bleed
 │   ├── orderService.js       # Vulnerable to duplicate SKU cart atomicity bug
 │   └── index.js              # Runner with manual console inspection
 │
-├── refactor/                 # Improved architecture applying all audit recommendations
+├── refactor/                 # Refactored project applying all audit recommendations
+│   ├── package.json          # Refactored project configuration & scripts
 │   ├── models.js             # Private fields (#stock, #price) & rich Order domain methods
 │   ├── inventoryRepository.js # Pure CRUD persistence layer (adjustStock removed)
 │   ├── orderService.js       # aggregateLineItems() bug fix, named constants, contract checks
 │   ├── index.js              # Demonstration runner verifying encapsulation & atomicity
 │   └── test.js               # Automated unit test suite using node:test and node:assert
 │
-├── src/                      # Source directory evaluated in the academic lab report
-├── package.json              # Project configuration and runnable scripts
 └── .gitignore                # Excludes node_modules/, scripts/, and PDF artifacts
 ```
 
@@ -58,25 +58,22 @@ SDC-LAB-2/
 
 ## How to Run
 
-### 1. Run Original Codebase
+### 1. Run Original Baseline Project
 ```bash
-npm start
-# or
 node old_code/index.js
+# or: cd old_code && npm start
 ```
 
-### 2. Run Refactored Codebase Demo
+### 2. Run Refactored Project Demo
 ```bash
-npm run start:refactor
-# or
 node refactor/index.js
+# or: cd refactor && npm start
 ```
 
-### 3. Run Automated Unit Tests
+### 3. Run Automated Unit Test Suite
 ```bash
-npm test
-# or
 node --test refactor/test.js
+# or: cd refactor && npm test
 ```
 
 ---

@@ -85,3 +85,4 @@ class InventoryRepository {
 }
 
 module.exports = InventoryRepository;
+

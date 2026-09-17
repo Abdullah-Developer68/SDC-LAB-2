@@ -1,0 +1,19 @@
+{
+  "name": "sdc-lab-2-order-management-refactored",
+  "version": "2.0.0",
+  "description": "SDC Lab 2: Refactored Order & Inventory Management System (Enforces Modularity, Readability, Maintainability)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test test.js"
+  },
+  "keywords": [
+    "sdc",
+    "software-construction",
+    "refactored",
+    "clean-code",
+    "node"
+  ],
+  "author": "Abdullah",
+  "license": "ISC"
+}

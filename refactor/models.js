@@ -226,3 +226,4 @@ class Order {
 }
 
 module.exports = { Product, Order, OrderStatus };
+
