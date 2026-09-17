@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Tooling and Build Scripts (Explicitly excluded as per instructions)
+scripts/
+
+# PDF Documents and Reports (Explicitly excluded as per instructions)
+*.pdf
+SDC_Lab2_Report.pdf
+
+# Logs and Environment
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
